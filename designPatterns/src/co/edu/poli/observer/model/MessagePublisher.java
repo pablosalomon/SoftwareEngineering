@@ -3,14 +3,10 @@ package co.edu.poli.observer.model;
 import java.util.ArrayList;
 import java.util.List;
  
-public class SubjectImpl implements Subject {
+public class MessagePublisher implements Subject {
      
-    private List<Observer> observers;
+    private List<Observer> observers = new ArrayList<>();
  
-    public SubjectImpl() {
-    	 observers = new ArrayList<>();
-	}
-    
     @Override
     public void attach(Observer o) {
         observers.add(o);
@@ -22,7 +18,7 @@ public class SubjectImpl implements Subject {
     }
  
     @Override
-    public void notifyUpdate(Integer m) {
+    public void notifyUpdate(Message m) {
         for(Observer o: observers) {
             o.update(m);
         }
