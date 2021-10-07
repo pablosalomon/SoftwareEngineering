@@ -1,6 +1,6 @@
 package co.edu.poli.abstractfactoryreflection.model;
 
-public class Cruzado implements Cheque {
+public class ChequeCruzado implements Cheque {
 
 	@Override
 	public double valorCheque() {

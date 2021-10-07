@@ -1,10 +1,10 @@
 package co.edu.poli.abstractfactoryreflection.model;
 
-public class Viajero implements Cheque{
+public class ChequePortador implements Cheque {
 
 	@Override
 	public double valorCheque() {
-		return 15000;
+		return 3000;
 	}
 
 }

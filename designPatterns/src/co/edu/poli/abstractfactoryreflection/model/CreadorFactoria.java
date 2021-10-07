@@ -2,7 +2,7 @@ package co.edu.poli.abstractfactoryreflection.model;
 
 import java.lang.reflect.InvocationTargetException;
 
-public class FactoryCreator {
+public class CreadorFactoria {
 	
 	public static PortafolioFactoria getFactory(String choice) {
 			try {

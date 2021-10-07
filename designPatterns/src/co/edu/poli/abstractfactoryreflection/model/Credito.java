@@ -1,11 +1,10 @@
 package co.edu.poli.abstractfactoryreflection.model;
 
-public interface PortafolioFactoria {
+public interface Credito {
 	
     /**
      * @return
      */
-    public Object crearProducto(String choice);
-
+    public double calcularInteresEA();
 
 }

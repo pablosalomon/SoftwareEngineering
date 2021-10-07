@@ -3,7 +3,7 @@ package co.edu.poli.abstractfactoryreflection.model;
 /**
  * 
  */
-public class Empresarial implements Cuenta {
+public class CuentaEmpresarial implements Cuenta {
 
     /**
      * @return

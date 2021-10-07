@@ -3,14 +3,15 @@ package co.edu.poli.abstractfactoryreflection.model;
 /**
  * 
  */
-public class Ahorro implements Cuenta {
+public class CuentaCorriente implements Cuenta {
+
 
     /**
      * @return
      */
     public double calcularInteres() {
         // TODO implement here
-        return 2.4;
+        return 3.4;
     }
 
     /**
@@ -18,7 +19,7 @@ public class Ahorro implements Cuenta {
      */
     public double deducirImpuesto() {
         // TODO implement here
-        return 0.2;
+        return 4.3;
     }
 
 }
