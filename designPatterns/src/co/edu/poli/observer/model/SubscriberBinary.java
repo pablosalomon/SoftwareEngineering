@@ -1,9 +1,9 @@
 package co.edu.poli.observer.model;
 
-public class MessageSubscriberOne implements Observer 
+public class SubscriberBinary implements Observer 
 {
     @Override
     public void update(Message m) {
-        System.out.println("MessageSubscriberOne :: " + m.getMessageContent());
+        System.out.println("MessageSubscriberBinary :: " + Integer.toBinaryString(m.getNumber()));
     }
 }

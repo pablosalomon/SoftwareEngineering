@@ -2,13 +2,13 @@ package co.edu.poli.observer.model;
 
 public class Message 
 {
-    final String messageContent;
+    final Integer number;
      
-    public Message (String m) {
-        this.messageContent = m;
+    public Message (Integer n) {
+        this.number = n;
     }
  
-    public String getMessageContent() {
-        return messageContent;
+    public Integer getNumber() {
+        return number;
     }
 }
