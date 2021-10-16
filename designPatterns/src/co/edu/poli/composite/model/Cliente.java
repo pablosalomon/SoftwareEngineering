@@ -28,6 +28,8 @@ public class Cliente {
 		sub3.adiObj(sub2);
 		sub3.adiObj(file3);
 		
+		sub3.adiObj(new SemiEstructurado(15L, ".json"));
+		
 		System.out.println(sub3 + "Tamanio sub3 : " + sub3.getTamanio());
 		System.out.println(sub2 + "Tamanio sub2 : " + sub2.getTamanio());
 		System.out.println(sub1 + "Tamanio sub1 : " + sub1.getTamanio());
