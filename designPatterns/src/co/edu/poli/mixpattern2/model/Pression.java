@@ -1,8 +1,5 @@
 package co.edu.poli.mixpattern2.model;
 
-/**
- * 
- */
 public class Pression extends Sensor {
 
 	private double voltI;
@@ -22,7 +19,7 @@ public class Pression extends Sensor {
 
 	@Override
 	public double calculateWasteEnergy() {
-		return voltI/voltO + 0.03;
+		return voltI / voltO + 0.03;
 	}
 
 	@Override

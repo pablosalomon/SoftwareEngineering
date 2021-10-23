@@ -7,13 +7,13 @@ public class Card implements Component {
 
 	private String serial;
 	private double voltI;
-	private double voltO;	
+	private double voltO;
 	private List<Component> components;
 
-	public Card (String serial, double voltI, double voltO) {
+	public Card(String serial, double voltI, double voltO) {
 		this.serial = serial;
 		this.voltI = voltI;
-		this.voltO = voltO;		
+		this.voltO = voltO;
 		components = new LinkedList<>();
 	}
 
@@ -23,8 +23,8 @@ public class Card implements Component {
 	}
 
 	@Override
-	public String toString() {		
-		return "<"+ this.serial + ":" + components + ">";
+	public String toString() {
+		return "<" + this.serial + ":" + components + ">";
 	}
 
 	@Override
@@ -34,7 +34,7 @@ public class Card implements Component {
 		for (Component cp : components)
 			size = size + cp.calculateWasteEnergy();
 
-		return size + (voltI/voltO);
+		return size + (voltI / voltO);
 	}
-	
+
 }
