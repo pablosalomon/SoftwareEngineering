@@ -6,7 +6,7 @@ package co.edu.poli.mixpattern2.model;
  * @author wsoto
  * @since 22.10.21
  */
-public class Cliente {
+public class Client {
 
 	public static void main(String[] args) {
 
