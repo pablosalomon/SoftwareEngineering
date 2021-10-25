@@ -2,9 +2,6 @@ package co.edu.poli.mixpattern2.model;
 
 public class Temperature extends Sensor {
 
-	private double voltI;
-	private double voltO;
-
 	public Temperature(double voltI, double voltO) {
 		super();
 		this.voltI = voltI;

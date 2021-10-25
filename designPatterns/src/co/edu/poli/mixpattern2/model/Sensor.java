@@ -3,10 +3,10 @@ package co.edu.poli.mixpattern2.model;
 public abstract class Sensor implements Component {
 
 	private String serial;
-
 	private double value;
-
 	private String unit;
+	protected double voltI;
+	protected double voltO;
 
 	public void setState(String serial, double value, String unit) {
 		this.serial = serial;
@@ -29,10 +29,5 @@ public abstract class Sensor implements Component {
 	}
 
 	public abstract double calcConversion();
-
-	public String consultaContenido(String s) {
-
-		return s;
-	}
 
 }
