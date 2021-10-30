@@ -13,9 +13,9 @@ public class Client {
 		Chain c = new Chain();
 		Logger chainLogger = c.doChaining();
 
-		chainLogger.logMsg(TipoLogger.OUTPUT.ordinal(), "Enter the sequence of values ");
+		chainLogger.logMsg(TipoLogger.CONSOLE.ordinal(), "Enter the sequence of values ");
 		chainLogger.logMsg(TipoLogger.ERROR.ordinal(), "An error is occured now");
-		chainLogger.logMsg(TipoLogger.DEBUG.ordinal(), "This was the error now debugging is compeled");
+		chainLogger.logMsg(TipoLogger.DEBUG.ordinal(), "This was the error now debugging is compiled");
 
 	}
 

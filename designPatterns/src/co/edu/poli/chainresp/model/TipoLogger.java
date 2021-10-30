@@ -4,7 +4,7 @@ package co.edu.poli.chainresp.model;
  * 
  */
 public enum TipoLogger{
-	OUTPUT,
+	CONSOLE,
 	ERROR,
     DEBUG
 }
