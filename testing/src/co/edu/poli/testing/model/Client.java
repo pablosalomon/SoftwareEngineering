@@ -6,7 +6,7 @@ public class Client {
 		
 		Function f = new Function();
 		
-		System.out.println(f.facto(5));
+		System.out.println(f.facto(4));
 	}
 
 }
