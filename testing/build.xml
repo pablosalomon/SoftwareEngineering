@@ -8,8 +8,8 @@
     <property name="ECLIPSE_HOME" value="../../../../eclipse/java-2021-03/eclipse/"/>
     <property name="junit.output.dir" value="junit"/>
     <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.8"/>
-    <property name="source" value="1.8"/>
+    <property name="target" value="1.9"/>
+    <property name="source" value="1.9"/>
     <path id="JUnit 5.libraryclasspath">
         <pathelement location="../../../../.p2/pool/plugins/org.junit.jupiter.api_5.7.1.v20210222-1948.jar"/>
         <pathelement location="../../../../.p2/pool/plugins/org.junit.jupiter.engine_5.7.1.v20210222-1948.jar"/>
