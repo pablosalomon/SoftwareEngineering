@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestFunction" project="testing" tests="3" started="3" failures="1" errors="0" ignored="0">
-  <testsuite name="co.edu.poli.testing.test.TestFunction" time="0.12" displayname="TestFunction" uniqueid="[engine:junit-jupiter]/[class:co.edu.poli.testing.test.TestFunction]">
-    <testcase name="test1" classname="co.edu.poli.testing.test.TestFunction" time="0.107" displayname="test1()" uniqueid="[engine:junit-jupiter]/[class:co.edu.poli.testing.test.TestFunction]/[method:test1()]">
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testing" project="testing" tests="3" started="3" failures="1" errors="0" ignored="0">
+  <testsuite name="co.edu.poli.testing.test.TestFunction" time="0.053" displayname="TestFunction" uniqueid="[engine:junit-jupiter]/[class:co.edu.poli.testing.test.TestFunction]">
+    <testcase name="test1" classname="co.edu.poli.testing.test.TestFunction" time="0.036" displayname="test1()" uniqueid="[engine:junit-jupiter]/[class:co.edu.poli.testing.test.TestFunction]/[method:test1()]">
       <failure>java.lang.AssertionError: No cumple poscondicion&#13;
 	at testing/co.edu.poli.testing.model.Function.facto(Function.java:24)&#13;
 	at testing/co.edu.poli.testing.test.TestFunction.test1(TestFunction.java:22)&#13;
@@ -74,7 +74,7 @@
 &#13;
 </failure>
     </testcase>
-    <testcase name="test2" classname="co.edu.poli.testing.test.TestFunction" time="0.006" displayname="test2()" uniqueid="[engine:junit-jupiter]/[class:co.edu.poli.testing.test.TestFunction]/[method:test2()]"/>
-    <testcase name="test3" classname="co.edu.poli.testing.test.TestFunction" time="0.005" displayname="test3()" uniqueid="[engine:junit-jupiter]/[class:co.edu.poli.testing.test.TestFunction]/[method:test3()]"/>
+    <testcase name="test2" classname="co.edu.poli.testing.test.TestFunction" time="0.009" displayname="test2()" uniqueid="[engine:junit-jupiter]/[class:co.edu.poli.testing.test.TestFunction]/[method:test2()]"/>
+    <testcase name="test3" classname="co.edu.poli.testing.test.TestFunction" time="0.006" displayname="test3()" uniqueid="[engine:junit-jupiter]/[class:co.edu.poli.testing.test.TestFunction]/[method:test3()]"/>
   </testsuite>
 </testrun>

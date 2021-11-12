@@ -18,7 +18,7 @@ class TestFunction {
 
 	@Test
 	void test1() {
-		int n = 8;
+		int n = 5;
 		assertEquals(120, f.facto(n));
 	}
 
