@@ -11,9 +11,6 @@
     <property name="target" value="1.9"/>
     <property name="source" value="1.9"/>
     <path id="testing.classpath">
-    	<fileset dir="lib">
-    		<include name="**/*.jar"/>
-    	</fileset>
         <pathelement location="target/classes"/>
         <pathelement location="lib/org.apiguardian_1.1.0.v20190826-0900.jar"/>
         <pathelement location="lib/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
@@ -99,10 +96,8 @@
     <target name="build-subprojects"/>
     <target depends="init" name="build-project">
         <echo message="${ant.project.name}: ${ant.file}"/>
-
-    	<echo message="${java.class.path}"/>
-    	<echo message="${java.library.path}"/>
-    		
+    	<echo message="${source}"/>
+    	<echo message="${testing.classpath}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
             <classpath refid="testing.classpath"/>
