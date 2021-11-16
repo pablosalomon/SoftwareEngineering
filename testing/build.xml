@@ -10,7 +10,7 @@
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.9"/>
     <property name="source" value="1.9"/>
-    <path id="testing.classpath">
+    <path id="testing.classpath1">
         <pathelement location="target/classes"/>
         <pathelement location="lib/org.apiguardian_1.1.0.v20190826-0900.jar"/>
         <pathelement location="lib/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
@@ -28,7 +28,7 @@
         <pathelement location="lib/org.opentest4j_1.2.0.v20190826-0900.jar"/>
     </path>
     <path id="run.Client.classpath">
-        <path refid="testing.classpath"/>
+        <path refid="testing.classpath1"/>
         <pathelement location="lib/org.apiguardian_1.1.0.v20190826-0900.jar"/>
         <pathelement location="lib/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
         <pathelement location="lib/org.junit_4.13.0.v20200204-1500.jar"/>
@@ -45,7 +45,7 @@
         <pathelement location="lib/org.opentest4j_1.2.0.v20190826-0900.jar"/>
     </path>
     <path id="run.TestFunction.classpath">
-        <path refid="testing.classpath"/>
+        <path refid="testing.classpath1"/>
         <pathelement location="lib/org.apiguardian_1.1.0.v20190826-0900.jar"/>
         <pathelement location="lib/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
         <pathelement location="lib/org.junit_4.13.0.v20200204-1500.jar"/>
@@ -62,7 +62,7 @@
         <pathelement location="lib/org.opentest4j_1.2.0.v20190826-0900.jar"/>
     </path>
     <path id="run.testing.classpath">
-        <path refid="testing.classpath"/>
+        <path refid="testing.classpath1"/>
         <pathelement location="lib/org.apiguardian_1.1.0.v20190826-0900.jar"/>
         <pathelement location="lib/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
         <pathelement location="lib/org.junit_4.13.0.v20200204-1500.jar"/>
@@ -96,11 +96,9 @@
     <target name="build-subprojects"/>
     <target depends="init" name="build-project">
         <echo message="${ant.project.name}: ${ant.file}"/>
-    	<echo message="${source}"/>
-    	<echo message="${testing.classpath}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
-            <classpath refid="testing.classpath"/>
+            <classpath refid="testing.classpath1"/>
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
