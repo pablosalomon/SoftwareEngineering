@@ -86,6 +86,9 @@
                 <exclude name="**/*.xtend"/>
                 <exclude name="**/*.java"/>
             </fileset>
+        	<fileset dir="lib">
+        		<include name="**/*.jar"/>
+        	</fileset>
         </copy>
     </target>
     <target name="clean">
