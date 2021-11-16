@@ -8,8 +8,8 @@
     <property name="ECLIPSE_HOME" value="../../../../eclipse/java-2021-03/eclipse/"/>
     <property name="junit.output.dir" value="junit"/>
     <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="9"/>
-    <property name="source" value="9"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
     <path id="testing.classpath">
         <pathelement location="target/classes"/>
         <pathelement location="lib/org.apiguardian_1.1.0.v20190826-0900.jar"/>
@@ -61,7 +61,6 @@
         <pathelement location="lib/org.junit.vintage.engine_5.7.1.v20210222-1948.jar"/>
         <pathelement location="lib/org.opentest4j_1.2.0.v20190826-0900.jar"/>
     </path>
-     
     <target name="init">
         <mkdir dir="target/classes"/>
         <copy includeemptydirs="false" todir="target/classes">
@@ -78,20 +77,13 @@
     <target depends="clean" name="cleanall"/>
     <target depends="build-subprojects,build-project" name="build"/>
     <target name="build-subprojects"/>
-    <target depends="init" name="build-project"> 
+    <target depends="init" name="build-project">
         <echo message="${ant.project.name}: ${ant.file}"/>
-    	
         <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
-            <classpath>
-            	<fileset dir="/var/lib/jenkins/workspace/Chelsea/testing/lib">
-            		<include name="**/*.jar" />
-            	</fileset>
-            </classpath>
+            <classpath refid="testing.classpath"/>
         </javac>
     </target>
-              	
-              	
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
     <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
         <copy todir="${ant.library.dir}">
@@ -130,4 +122,3 @@
         </junitreport>
     </target>
 </project>
-	
