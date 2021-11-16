@@ -84,7 +84,7 @@
         <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
             <classpath>
-            	<fileset dir="/lib">
+            	<fileset dir="/var/lib/jenkins/workspace/Chelsea/testing/lib">
             		<include name="**/*.jar" />
             	</fileset>
             </classpath>
