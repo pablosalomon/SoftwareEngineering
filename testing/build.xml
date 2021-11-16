@@ -80,13 +80,16 @@
     <target name="build-subprojects"/>
     <target depends="init" name="build-project"> 
         <echo message="${ant.project.name}: ${ant.file}"/>
-        <echo message="${testing.classpath}"/>
     	
-        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}" classpathref="testing.classpath">
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
             <classpath refid="testing.classpath"/>
+            <exclude name="**/module-info.java"/>
+            
         </javac>
     </target>
+              	
+              	
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
     <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
         <copy todir="${ant.library.dir}">
