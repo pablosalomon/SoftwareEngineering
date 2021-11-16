@@ -96,6 +96,10 @@
     <target name="build-subprojects"/>
     <target depends="init" name="build-project">
         <echo message="${ant.project.name}: ${ant.file}"/>
+
+    	<echo message="${java.class.path}"/>
+    	<echo message="${java.library.path}"/>
+    		
         <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
             <classpath refid="testing.classpath"/>
