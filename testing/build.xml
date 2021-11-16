@@ -8,8 +8,8 @@
     <property name="ECLIPSE_HOME" value="../../../../eclipse/java-2021-03/eclipse/"/>
     <property name="junit.output.dir" value="junit"/>
     <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.9"/>
-    <property name="source" value="1.9"/>
+    <property name="target" value="9"/>
+    <property name="source" value="9"/>
     <path id="testing.classpath">
         <pathelement location="target/classes"/>
         <pathelement location="lib/org.apiguardian_1.1.0.v20190826-0900.jar"/>
@@ -45,23 +45,6 @@
         <pathelement location="lib/org.opentest4j_1.2.0.v20190826-0900.jar"/>
     </path>
     <path id="run.TestFunction.classpath">
-        <path refid="testing.classpath"/>
-        <pathelement location="lib/org.apiguardian_1.1.0.v20190826-0900.jar"/>
-        <pathelement location="lib/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
-        <pathelement location="lib/org.junit_4.13.0.v20200204-1500.jar"/>
-        <pathelement location="lib/org.junit.jupiter.api_5.7.1.v20210222-1948.jar"/>
-        <pathelement location="lib/org.junit.jupiter.engine_5.7.1.v20210222-1948.jar"/>
-        <pathelement location="lib/org.junit.jupiter.migrationsupport_5.7.1.v20210222-1948.jar"/>
-        <pathelement location="lib/org.junit.jupiter.params_5.7.1.v20210222-1948.jar"/>
-        <pathelement location="lib/org.junit.platform.commons_1.7.1.v20210222-1948.jar"/>
-        <pathelement location="lib/org.junit.platform.engine_1.7.1.v20210222-1948.jar"/>
-        <pathelement location="lib/org.junit.platform.launcher_1.7.1.v20210222-1948.jar"/>
-        <pathelement location="lib/org.junit.platform.runner_1.7.1.v20210222-1948.jar"/>
-        <pathelement location="lib/org.junit.platform.suite.api_1.7.1.v20210222-1948.jar"/>
-        <pathelement location="lib/org.junit.vintage.engine_5.7.1.v20210222-1948.jar"/>
-        <pathelement location="lib/org.opentest4j_1.2.0.v20190826-0900.jar"/>
-    </path>
-    <path id="run.testing.classpath">
         <path refid="testing.classpath"/>
         <pathelement location="lib/org.apiguardian_1.1.0.v20190826-0900.jar"/>
         <pathelement location="lib/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
@@ -126,16 +109,8 @@
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
             <test name="co.edu.poli.testing.test.TestFunction" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.TestFunction.classpath"/>
-        </junit>
-    </target>
-    <target name="testing">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
             <jvmarg line="-ea --module-path module-info.java"/>
-            <classpath refid="run.testing.classpath"/>
+            <classpath refid="run.TestFunction.classpath"/>
         </junit>
     </target>
     <target name="junitreport">
