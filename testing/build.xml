@@ -84,7 +84,7 @@
         <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
             <classpath refid="testing.classpath"/>
-            <exclude name="**/module-info.java"/>
+            <include name="**/module-info.java"/>
             
         </javac>
     </target>
