@@ -99,6 +99,8 @@
         <javac debug="true" module="testing" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
             <classpath refid="testing.classpath"/>
+            <arg value="--module"/>
+            <arg value="testing"/>
         </javac>
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
