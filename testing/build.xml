@@ -61,6 +61,7 @@
         <pathelement location="lib/org.junit.vintage.engine_5.7.1.v20210222-1948.jar"/>
         <pathelement location="lib/org.opentest4j_1.2.0.v20190826-0900.jar"/>
     </path>
+     
     <target name="init">
         <mkdir dir="target/classes"/>
         <copy includeemptydirs="false" todir="target/classes">
@@ -77,9 +78,9 @@
     <target depends="clean" name="cleanall"/>
     <target depends="build-subprojects,build-project" name="build"/>
     <target name="build-subprojects"/>
-    <target depends="init" name="build-project">
+    <target depends="init" name="build-project"> 
         <echo message="${ant.project.name}: ${ant.file}"/>
-        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}" classpathref="testing.classpath">
             <src path="src"/>
             <classpath refid="testing.classpath"/>
         </javac>
@@ -122,3 +123,4 @@
         </junitreport>
     </target>
 </project>
+	
