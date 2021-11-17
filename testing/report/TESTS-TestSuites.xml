@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="PGCAM26825" id="0" name="TestFunction" package="co.edu.poli.testing.test" skipped="0" tests="3" time="0.157" timestamp="2021-11-17T04:20:50">
+  <testsuite errors="0" failures="0" hostname="PGCAM26825" id="0" name="TestFunction" package="co.edu.poli.testing.test" skipped="0" tests="3" time="0.145" timestamp="2021-11-17T04:25:09">
       <properties>
           <property name="ant.library.dir" value="C:\Users\wsoto\.p2\pool\plugins\org.apache.ant_1.10.11.v20210720-1445\lib" />
 
@@ -30,7 +30,7 @@
 
           <property name="sun.boot.library.path" value="C:\Users\wsoto\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner co.edu.poli.testing.test.TestFunction skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\wsoto\Downloads\git\repository\testing\report\TEST-co.edu.poli.testing.test.TestFunction.xml crashfile=C:\Users\wsoto\Downloads\git\repository\testing\junitvmwatcher2940345877473350852.properties propsfile=C:\Users\wsoto\Downloads\git\repository\testing\junit893260459898400276.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner co.edu.poli.testing.test.TestFunction skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\wsoto\Downloads\git\repository\testing\report\TEST-co.edu.poli.testing.test.TestFunction.xml crashfile=C:\Users\wsoto\Downloads\git\repository\testing\junitvmwatcher8586630545887735216.properties propsfile=C:\Users\wsoto\Downloads\git\repository\testing\junit18172284446844176304.properties" />
 
           <property name="jdk.debug" value="release" />
 
@@ -224,7 +224,7 @@
 
       </properties>
 
-      <testcase classname="co.edu.poli.testing.test.TestFunction" name="test1" time="0.017" />
+      <testcase classname="co.edu.poli.testing.test.TestFunction" name="test1" time="0.013" />
 
       <testcase classname="co.edu.poli.testing.test.TestFunction" name="test2" time="0.0" />
 
