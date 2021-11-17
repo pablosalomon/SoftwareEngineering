@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import co.edu.poli.testing.model.Function;
 
-class TestFunction {
+public class TestFunction {
 
 	Function f;
 	
