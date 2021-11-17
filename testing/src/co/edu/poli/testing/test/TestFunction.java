@@ -2,7 +2,6 @@ package co.edu.poli.testing.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.Test;
 
 import co.edu.poli.testing.model.Function;
