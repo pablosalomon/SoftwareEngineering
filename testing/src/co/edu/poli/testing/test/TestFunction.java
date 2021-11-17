@@ -12,7 +12,7 @@ public class TestFunction {
 
 	@Test
 	public void test1() {
-		int n = 7;
+		int n = 5;
 		assertEquals(120, f.facto(n));
 	}
 
