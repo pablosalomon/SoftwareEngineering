@@ -18,7 +18,7 @@ public class TestFunction {
 
 	@Test
 	public void test2() {
-		int n = 4;
+		int n = 6;
 		assertEquals(720, f.facto(n));
 	}
 	
