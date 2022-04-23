@@ -8,18 +8,18 @@ public class Function {
 		
 		int f=1;
 		
-		assert f==1 : String.format("1");
+		assert f==1 : String.format("Error 1");
 		
 		int i=1;
 		
-		assert i==1 : String.format("2");
+		assert i==1 : String.format("Error 2");
 		
 		while (i<=n) { 
 			f*=i;
 			i+=1;
 		}
 		
-		assert i>n : String.format("3");
+		assert i>=n : String.format("Error 3");
 		
 		assert f==1 || f==120 || f==720 || f==3628800  : String.format("No cumple poscondicion");
 		
