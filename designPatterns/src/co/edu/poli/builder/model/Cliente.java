@@ -4,16 +4,22 @@ public class Cliente {
 
 	public static void main(String[] args) {
 
-		HouseBuilder iglooBuilder = new IglooHouseBuilder();
-		CivilEngineer engineer = new CivilEngineer(iglooBuilder);
-
-		engineer.constructHouse("igloo");
-
-		House house = engineer.getHouse();
+		House h1 = new House.Builder()
+					.withType("apto")
+					.withCeil(null)
+					.withWindow(null)
+					.build();
 		
-		house.setBasement("ICE");
-		System.out.println("Builder constructed: " + house);
-			
+		System.out.println(h1);
+		
+		House h2 = new House.Builder()
+				.withType("apto")
+				.withFloor(null)
+				.withWindow(null)
+				.build();
+		
+		System.out.println(h2);
+
 	}
 
 }

@@ -1,34 +1,64 @@
 package co.edu.poli.builder.model;
 
-public class House implements HousePlan {
+public final class House {
 
-	private String basement;
-	private String structure;
-	private String roof;
-	private String interior;
+	private final String type;
+	private final Ceil ceil;
+	private final Floor floor;
+	private final Door door;
+	private final Window window;
 
-	public void setBasement(String basement) {
-		this.basement = basement;
+	public House(Builder builder) {
+		this.type = builder.type;
+		this.ceil = builder.ceil;
+		this.floor = builder.floor;
+		this.door = builder.door;
+		this.window = builder.window;
 	}
 
-	public void setStructure(String structure) {
-		this.structure = structure;
-	}
+	public static class Builder {
 
-	public void setRoof(String roof) {
-		this.roof = roof;
-	}
+		private String type;
+		private Ceil ceil;
+		private Floor floor;
+		private Door door;
+		private Window window;
 
-	public void setInterior(String interior) {
-		this.interior = interior;
+		public Builder withType(String type) {
+			this.type = type;
+			return this;
+		}
+
+		public Builder withCeil(Ceil ceil) {
+			this.ceil = ceil;
+			return this;
+		}
+
+		public Builder withFloor(Floor floor) {
+			this.floor = floor;
+			return this;
+		}
+
+		public Builder withDoor(Door door) {
+			this.door = door;
+			return this;
+		}
+
+		public Builder withWindow(Window window) {
+			this.window = window;
+			return this;
+		}
+
+		public House build() {
+			return new House(this);
+		}
+
 	}
 
 	@Override
 	public String toString() {
-		return "House [basement=" + basement + ", structure=" + structure + ", roof=" + roof + ", interior=" + interior
+		return "House [type=" + type + ", ceil=" + ceil + ", floor=" + floor + ", door=" + door + ", window=" + window
 				+ "]";
 	}
-	
-	
 
 }
