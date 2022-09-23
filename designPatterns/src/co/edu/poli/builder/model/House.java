@@ -7,6 +7,8 @@ public final class House {
 	private final Floor floor;
 	private final Door door;
 	private final Window window;
+	private final Pool pool;
+	private final Garden garden;
 
 	public House(Builder builder) {
 		this.type = builder.type;
@@ -14,6 +16,8 @@ public final class House {
 		this.floor = builder.floor;
 		this.door = builder.door;
 		this.window = builder.window;
+		this.pool = builder.pool;
+		this.garden = builder.garden;
 	}
 
 	public static class Builder {
@@ -23,6 +27,8 @@ public final class House {
 		private Floor floor;
 		private Door door;
 		private Window window;
+		private Pool pool;
+		private Garden garden;
 
 		public Builder withType(String type) {
 			this.type = type;
@@ -49,6 +55,16 @@ public final class House {
 			return this;
 		}
 
+		public Builder withPool(Pool pool) {
+			this.pool = pool;
+			return this;
+		}
+
+		public Builder withGarden(Garden garden) {
+			this.garden = garden;
+			return this;
+		}
+
 		public House build() {
 			return new House(this);
 		}
@@ -58,7 +74,7 @@ public final class House {
 	@Override
 	public String toString() {
 		return "House [type=" + type + ", ceil=" + ceil + ", floor=" + floor + ", door=" + door + ", window=" + window
-				+ "]";
+				+ ", pool=" + pool + ", garden=" + garden + "]";
 	}
 
 }

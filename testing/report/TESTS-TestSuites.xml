@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="1" hostname="PGCAM26825" id="0" name="TestFunction" package="co.edu.poli.testing.test" skipped="0" tests="3" time="0.179" timestamp="2021-11-17T04:34:45">
+  <testsuite errors="0" failures="1" hostname="PGCAM26825" id="0" name="TestFunction" package="co.edu.poli.testing.test" skipped="0" tests="3" time="0.234" timestamp="2022-09-23T03:51:16">
       <properties>
           <property name="ant.library.dir" value="C:\Users\wsoto\.p2\pool\plugins\org.apache.ant_1.10.11.v20210720-1445\lib" />
 
@@ -22,23 +22,23 @@
 
           <property name="env.FPS_BROWSER_APP_PROFILE_STRING" value="Internet Explorer" />
 
-          <property name="java.vendor.url" value="https://java.oracle.com/" />
-
           <property name="env.CommonProgramW6432" value="C:\Program Files\Common Files" />
+
+          <property name="java.vendor.url" value="https://java.oracle.com/" />
 
           <property name="env.OS" value="Windows_NT" />
 
           <property name="sun.boot.library.path" value="C:\Users\wsoto\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner co.edu.poli.testing.test.TestFunction skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\wsoto\Downloads\git\repository\testing\report\TEST-co.edu.poli.testing.test.TestFunction.xml crashfile=C:\Users\wsoto\Downloads\git\repository\testing\junitvmwatcher9676922726412086747.properties propsfile=C:\Users\wsoto\Downloads\git\repository\testing\junit3295126978963615114.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner co.edu.poli.testing.test.TestFunction skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\wsoto\Downloads\git\repository\testing\report\TEST-co.edu.poli.testing.test.TestFunction.xml crashfile=C:\Users\wsoto\Downloads\git\repository\testing\junitvmwatcher7410667479793369099.properties propsfile=C:\Users\wsoto\Downloads\git\repository\testing\junit6454874853159284720.properties" />
 
           <property name="jdk.debug" value="release" />
 
           <property name="env.ComSpec" value="C:\WINDOWS\system32\cmd.exe" />
 
-          <property name="eclipse.pdebuild.templates" value="C:\Users\wsoto\eclipse\java-2021-03\eclipse\..\..\..\.p2\pool\plugins\org.eclipse.pde.build_3.10.1000.v20210130-0813\templates" />
-
           <property name="ant.file.type.testing" value="file" />
+
+          <property name="eclipse.pdebuild.templates" value="C:\Users\wsoto\eclipse\java-2021-03\eclipse\..\..\..\.p2\pool\plugins\org.eclipse.pde.build_3.10.1000.v20210130-0813\templates" />
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
@@ -46,11 +46,11 @@
 
           <property name="java.home" value="C:\Users\wsoto\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre" />
 
-          <property name="env.ProgramFiles" value="C:\Program Files" />
+          <property name="file.separator" value="\" />
 
           <property name="basedir" value="C:\Users\wsoto\Downloads\git\repository\testing" />
 
-          <property name="file.separator" value="\" />
+          <property name="env.ProgramFiles" value="C:\Program Files" />
 
           <property name="java.vm.compressedOopsMode" value="Zero based" />
 
@@ -58,9 +58,9 @@
 
           <property name="env.PROMPT" value="$P$G" />
 
-          <property name="java.specification.name" value="Java Platform API Specification" />
-
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
 
           <property name="env.LOCALAPPDATA" value="C:\Users\wsoto\AppData\Local" />
 
@@ -68,9 +68,9 @@
 
           <property name="env.PROCESSOR_REVISION" value="4e03" />
 
-          <property name="env.PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules" />
-
           <property name="user.script" value="" />
+
+          <property name="env.PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules" />
 
           <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
 
@@ -106,9 +106,9 @@
 
           <property name="env.PROCESSOR_LEVEL" value="6" />
 
-          <property name="env.Path" value="C:/Users/wsoto/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin/server;C:/Users/wsoto/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\nodejs\;C:\Users\wsoto\AppData\Local\Microsoft\WindowsApps;C:\Users\wsoto\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\wsoto\AppData\Local\GitHubDesktop\bin;C:\Users\wsoto\AppData\Local\Programs\Git\cmd;C:\Users\wsoto\AppData\Roaming\npm;C:\Users\wsoto\Desktop;" />
-
           <property name="env.HOMEDRIVE" value="C:" />
+
+          <property name="env.Path" value="C:/Users/wsoto/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin/server;C:/Users/wsoto/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\nodejs\;C:\Users\wsoto\AppData\Local\Microsoft\WindowsApps;C:\Users\wsoto\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\wsoto\AppData\Local\GitHubDesktop\bin;C:\Users\wsoto\AppData\Local\Programs\Git\cmd;C:\Users\wsoto\AppData\Roaming\npm;c:\users\wsoto\.local\bin;C:\Users\wsoto\Desktop;" />
 
           <property name="env.TMP" value="C:\Users\wsoto\AppData\Local\Temp" />
 
@@ -122,13 +122,13 @@
 
           <property name="ant.version" value="Apache Ant(TM) version 1.10.11 compiled on July 10 2021" />
 
-          <property name="eclipse.pdebuild.scripts" value="C:\Users\wsoto\eclipse\java-2021-03\eclipse\..\..\..\.p2\pool\plugins\org.eclipse.pde.build_3.10.1000.v20210130-0813\scripts" />
+          <property name="java.library.path" value="C:\Users\wsoto\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/wsoto/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin/server;C:/Users/wsoto/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\nodejs\;C:\Users\wsoto\AppData\Local\Microsoft\WindowsApps;C:\Users\wsoto\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\wsoto\AppData\Local\GitHubDesktop\bin;C:\Users\wsoto\AppData\Local\Programs\Git\cmd;C:\Users\wsoto\AppData\Roaming\npm;c:\users\wsoto\.local\bin;C:\Users\wsoto\Desktop;;." />
 
-          <property name="java.library.path" value="C:\Users\wsoto\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/wsoto/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin/server;C:/Users/wsoto/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\nodejs\;C:\Users\wsoto\AppData\Local\Microsoft\WindowsApps;C:\Users\wsoto\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\wsoto\AppData\Local\GitHubDesktop\bin;C:\Users\wsoto\AppData\Local\Programs\Git\cmd;C:\Users\wsoto\AppData\Roaming\npm;C:\Users\wsoto\Desktop;;." />
+          <property name="eclipse.pdebuild.scripts" value="C:\Users\wsoto\eclipse\java-2021-03\eclipse\..\..\..\.p2\pool\plugins\org.eclipse.pde.build_3.10.1000.v20210130-0813\scripts" />
 
           <property name="java.vendor" value="Oracle Corporation" />
 
-          <property name="env.LOGONSERVER" value="\\SRV-VMAD-CAMPUS" />
+          <property name="env.LOGONSERVER" value="\\SRV-RODC" />
 
           <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
 
@@ -194,6 +194,8 @@
 
           <property name="ECLIPSE_HOME" value="../../../../eclipse/java-2021-03/eclipse/" />
 
+          <property name="env.ZES_ENABLE_SYSMAN" value="1" />
+
           <property name="ant.core.lib" value="C:\Users\wsoto\.p2\pool\plugins\org.apache.ant_1.10.11.v20210720-1445\lib\ant.jar" />
 
           <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
@@ -224,10 +226,12 @@
 
       </properties>
 
-      <testcase classname="co.edu.poli.testing.test.TestFunction" name="test1" time="0.011">
+      <testcase classname="co.edu.poli.testing.test.TestFunction" name="test1" time="0.019" />
+
+      <testcase classname="co.edu.poli.testing.test.TestFunction" name="test2" time="0.01">
           <failure message="No cumple poscondicion" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: No cumple poscondicion
 	at co.edu.poli.testing.model.Function.facto(Function.java:24)
-	at co.edu.poli.testing.test.TestFunction.test1(TestFunction.java:16)
+	at co.edu.poli.testing.test.TestFunction.test2(TestFunction.java:22)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -235,9 +239,7 @@
 
       </testcase>
 
-      <testcase classname="co.edu.poli.testing.test.TestFunction" name="test2" time="0.014" />
-
-      <testcase classname="co.edu.poli.testing.test.TestFunction" name="test3" time="0.01" />
+      <testcase classname="co.edu.poli.testing.test.TestFunction" name="test3" time="0.014" />
 
       <system-out><![CDATA[]]></system-out>
 
