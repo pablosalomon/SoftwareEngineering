@@ -1,13 +1,18 @@
 package co.edu.poli.facade.model;
 
-public class Samsung implements MobileShop {  
-	
-    @Override  
-    public void modelNo() {  
-    System.out.println(" Samsung galaxy tab 3 ");  
-    }  
-    @Override  
-    public void price() {  
-        System.out.println(" Rs 45000.00 ");  
-    }  
+public class Samsung extends MobileShop {
+
+	public Samsung(String model, String price) {
+		super(model, price);
+	}
+
+	@Override
+	public String modelNo() {
+		return getModel();
+	}
+
+	@Override
+	public String price() {
+		return getPrice();
+	}
 }

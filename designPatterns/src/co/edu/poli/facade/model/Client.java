@@ -9,12 +9,14 @@ public class Client {
 	private static int choice;
 
 	public static void main(String args[]) throws NumberFormatException, IOException {
-		
-			HashMap<Integer, MobileShop> a = new HashMap<Integer, MobileShop>(); 
-			a.put(1, new Iphone()); 
-			a.put(2, new Samsung()); 
-			a.put(3, new Blackberry()); 
-		
+
+		//One event does this activity
+		HashMap<Integer, MobileShop> a = new HashMap<Integer, MobileShop>();
+		a.put(1, new Iphone(" Iphone 6 ", " Rs 65000.00 "));
+		a.put(2, new Samsung(" Samsung 4", " Rs 45000.00 "));
+		a.put(3, new Blackberry(" Blackberry Z10", " Rs 35000.00"));
+
+		//One event does this activity
 		do {
 			System.out.print("========= Mobile Shop ============ \n");
 			System.out.print("            1. IPHONE.              \n");
@@ -25,20 +27,20 @@ public class Client {
 
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			choice = Integer.parseInt(br.readLine());
-			
+
 			ShopKeeper sk = new ShopKeeper(a);
 
 			switch (choice) {
 			case 1: {
-				sk.getMethods(1);
+				System.out.println(sk.getMethods(1));
 			}
 				break;
 			case 2: {
-				sk.getMethods(2);
+				System.out.println(sk.getMethods(2));
 			}
 				break;
 			case 3: {
-				sk.getMethods(3);
+				System.out.println(sk.getMethods(3));
 			}
 				break;
 			default: {

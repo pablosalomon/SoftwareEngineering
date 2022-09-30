@@ -10,9 +10,9 @@ public class ShopKeeper {
 		arrayMobile = a;
 	}
 
-	public void getMethods(int serial) {
-		arrayMobile.get(serial).modelNo();
-		arrayMobile.get(serial).price();
+	public String getMethods(int serial) {
+		return arrayMobile.get(serial).modelNo() + " " +
+				arrayMobile.get(serial).price();
 	}
 
 }

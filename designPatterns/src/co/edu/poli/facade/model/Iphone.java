@@ -1,13 +1,18 @@
 package co.edu.poli.facade.model;
 
-public class Iphone implements MobileShop {
-	@Override
-	public void modelNo() {
-		System.out.println(" Iphone 6 ");
+public class Iphone extends MobileShop {
+
+	public Iphone(String model, String price) {
+		super(model, price);
 	}
 
 	@Override
-	public void price() {
-		System.out.println(" Rs 65000.00 ");
+	public String modelNo() {
+		return getModel();
+	}
+
+	@Override
+	public String price() {
+		return getPrice();
 	}
 }

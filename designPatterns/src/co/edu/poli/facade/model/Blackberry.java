@@ -1,12 +1,18 @@
 package co.edu.poli.facade.model;
 
-public class Blackberry implements MobileShop {  
-    @Override  
-    public void modelNo() {  
-    System.out.println(" Blackberry Z10 ");  
-    }  
-    @Override  
-    public void price() {  
-        System.out.println(" Rs 55000.00 ");  
+public class Blackberry extends MobileShop {
+	
+	public Blackberry(String model, String price) {
+		super(model, price);
+	}
+
+	@Override
+	public String modelNo() {
+		return getModel();
+	}
+
+	@Override
+	public String price() {
+		return getPrice();
 	}
 }
