@@ -2,7 +2,7 @@ package co.edu.poli.facade.model;
 
 public abstract class MobileShop {
 
-	public String model;
+	private String model;
 	private String price;
 	
 	public abstract String modelNo();
