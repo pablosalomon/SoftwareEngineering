@@ -1,7 +1,18 @@
 package co.edu.poli.testing.model;
 
+/**
+ * Esta clase sirve para...
+ * @author wsoto
+ * @since 26.10.22
+ * 
+ */
 public class Function {
 	
+	/**
+	 * Este metodo calcula el factorial
+	 * @param n valor ingresado mayor a cero
+	 * @return el factorial de n
+	 */
 	public int facto (int n) {
 		
 		assert n>=1 && n<=10: String.format("No cumple precondicion");
