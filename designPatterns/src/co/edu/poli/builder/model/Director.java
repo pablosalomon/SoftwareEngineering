@@ -15,6 +15,10 @@ public class Director {
 					.withWindow(null)
 					.withPool(null)
 					.build();
+			
+			Garden g = new Garden();
+			h.setGarden(g);
+			
 		} else {
 			h = new House.Builder()
 					.withType("house")

@@ -2,13 +2,13 @@ package co.edu.poli.builder.model;
 
 public final class House {
 
-	private final String type;
-	private final Ceil ceil;
-	private final Floor floor;
-	private final Door door;
-	private final Window window;
-	private final Pool pool;
-	private final Garden garden;
+	private String type;
+	private Ceil ceil;
+	private Floor floor;
+	private Door door;
+	private Window window;
+	private Pool pool;
+	private Garden garden;
 
 	public House(Builder builder) {
 		this.type = builder.type;
@@ -19,35 +19,7 @@ public final class House {
 		this.pool = builder.pool;
 		this.garden = builder.garden;
 	}
-
-	public String getType() {
-		return type;
-	}
-
-	public Ceil getCeil() {
-		return ceil;
-	}
-
-	public Floor getFloor() {
-		return floor;
-	}
-
-	public Door getDoor() {
-		return door;
-	}
-
-	public Window getWindow() {
-		return window;
-	}
-
-	public Pool getPool() {
-		return pool;
-	}
-
-	public Garden getGarden() {
-		return garden;
-	}
-
+	
 	public static class Builder {
 
 		private String type;
@@ -97,6 +69,69 @@ public final class House {
 			return new House(this);
 		}
 
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public House setType(String type) {
+		this.type = type;
+		return this;
+	}
+
+	public Ceil getCeil() {
+		return ceil;
+	}
+
+	public House setCeil(Ceil ceil) {
+		this.ceil = ceil;
+		return this;
+	}
+
+	public Floor getFloor() {
+		return floor;
+	}
+
+	public House setFloor(Floor floor) {
+		this.floor = floor;
+		return this;
+	}
+
+	public Door getDoor() {
+		return door;
+	}
+
+	public House setDoor(Door door) {
+		this.door = door;
+		return this;
+	}
+
+	public Window getWindow() {
+		return window;
+	}
+
+	public House setWindow(Window window) {
+		this.window = window;
+		return this;
+	}
+
+	public Pool getPool() {
+		return pool;
+	}
+
+	public House setPool(Pool pool) {
+		this.pool = pool;
+		return this;
+	}
+
+	public Garden getGarden() {
+		return garden;
+	}
+
+	public House setGarden(Garden garden) {
+		this.garden = garden;
+		return this;
 	}
 
 	@Override
