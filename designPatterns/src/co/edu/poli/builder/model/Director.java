@@ -23,8 +23,6 @@ public class Director {
 			h = new House.Builder()
 					.withType("house")
 					.withCeil(null)
-					.withFloor(null)
-					.withDoor(null)
 					.withWindow(null)
 					.withGarden(null)
 					.build();
